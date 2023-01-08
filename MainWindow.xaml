@@ -17,7 +17,7 @@
         <Button Content="Стоп" HorizontalAlignment="Left" Margin="1186,534,0,0" VerticalAlignment="Top" Height="58" Width="84" FontSize="16"/>
         <Button Content="100&#xA;Быстро" HorizontalAlignment="Left" Margin="1092,628,0,0" VerticalAlignment="Top" Height="59" Width="84" FontSize="16"/>
         <Button Content="Очистить&#xA; схему" HorizontalAlignment="Left" Margin="1186,628,0,0" VerticalAlignment="Top" Height="59" Width="84" FontSize="16"/>
-        <Image Source="C:\Users\andru\Desktop\WpfApp1\WpfApp1\WPF guide\WpfApp1\Pictures\Scheme.png" Margin="389,59,311,125" Width="580" Height="520"/>
+        <Image Source="C:\Users\andru\Desktop\WpfApp1\WpfApp1\WPF guide\WpfApp1\Pictures\Scheme.png" Margin="394,59,306,125" Width="580" Height="520"/>
         <TextBlock HorizontalAlignment="Left" Margin="1130,39,0,0" TextWrapping="Wrap" Text="Результаты" VerticalAlignment="Top" TextAlignment="Center" FontSize="18"/>
         <TextBlock HorizontalAlignment="Left" Margin="1082,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"><Run Language="ru-ru" Text="Всего:"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="1082,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"><Run Language="ru-ru" Text="Детектор 1:"/></TextBlock>
