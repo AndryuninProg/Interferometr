@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Interferometr"
              mc:Ignorable="d" 
              d:DesignHeight="400" d:DesignWidth="250"
-             Background="#ffffcc" ClipToBounds="True"
+             Background="#ffffcc"
              >
     <Grid>
         <TextBlock x:Name="Task" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Текст задания" VerticalAlignment="Center" Height="380" Width="230" FontFamily="Segoe UI" FontSize="16" Background="#339DFF7B"/>

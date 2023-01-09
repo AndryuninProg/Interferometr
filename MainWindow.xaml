@@ -8,7 +8,41 @@
         WindowStartupLocation ="CenterScreen">
 
 
-    <Grid Margin="0,2,0,-2" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="780"/>
+            <ColumnDefinition Width="250"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="420"/>
+                <RowDefinition Height="260"/>
+            </Grid.RowDefinitions>
+
+            <Button x:Name="Menu" Content="Меню" />
+            <Interferometr:Textbar Grid.Row="1" VerticalAlignment="Center" Height="420"/>
+            <Interferometr:Draggable Grid.Row="2" VerticalAlignment="Top" Height="235" HorizontalAlignment="Center" Width="250"/>
+
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="580" />
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+        </Grid>
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="250"/>
+                <RowDefinition Height="580" />
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+        </Grid>
+    </Grid>
+
+    <!--<Grid Margin="0,2,0,-2" >
 
         <Rectangle Height="200" Margin="1072,40,0,0" Stroke="Black" VerticalAlignment="Top" Fill="#ffffcc" HorizontalAlignment="Left" Width="208" />
 
@@ -40,5 +74,5 @@
         <Image Source="C:\Users\andru\Desktop\WpfApp1\WpfApp1\WPF guide\WpfApp1\Pictures\Laser.png" Margin="267,509,891,128"/>
         <TextBlock HorizontalAlignment="Left" Margin="861,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"><Run Language="ru-ru" Text="Детектор 1"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="754,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"><Run Text="Детектор "/><Run Language="ru-ru" Text="2"/></TextBlock>
-    </Grid>
+    </Grid>-->
 </Window>
