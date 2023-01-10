@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="Interferometr.Results"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Interferometr"
+             mc:Ignorable="d" 
+             d:DesignHeight="250" d:DesignWidth="250"
+             Background="#ffffcc"
+             >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="0" Text="Результаты" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Center"  Grid.ColumnSpan="2" Width="250" TextAlignment="Center"/>
+        <TextBlock Grid.Column="0" Grid.Row="1" Text="Детектор 1:" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left"  FontSize="14"/>
+        <TextBlock Grid.Column="0" Grid.Row="2" Text="Детектор 2:" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left"  FontSize="14"/>
+        <TextBlock Grid.Column="0" Grid.Row="3" Text="Поглощено:" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left"  FontSize="14"/>
+        <TextBlock Grid.Column="0" Grid.Row="4" Text="Всего:" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left"  FontSize="14"/>
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="0" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="14"/>
+        <TextBlock Grid.Column="1" Grid.Row="2" Text="0" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="14"/>
+        <TextBlock Grid.Column="1" Grid.Row="3" Text="0" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="14"/>
+        <TextBlock Grid.Column="1" Grid.Row="4" Text="0" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="14"/>
+
+    </Grid>
+</UserControl>

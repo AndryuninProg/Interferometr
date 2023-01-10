@@ -8,7 +8,7 @@
         WindowStartupLocation ="CenterScreen">
 
 
-    <Grid>
+    <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"/>
             <ColumnDefinition Width="780"/>
@@ -16,29 +16,39 @@
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
                 <RowDefinition Height="420"/>
                 <RowDefinition Height="260"/>
             </Grid.RowDefinitions>
 
-            <Button x:Name="Menu" Content="Меню" />
-            <Interferometr:Textbar Grid.Row="1" VerticalAlignment="Center" Height="420"/>
-            <Interferometr:Draggable Grid.Row="2" VerticalAlignment="Top" Height="235" HorizontalAlignment="Center" Width="250"/>
+            <Button Grid.Row="0" x:Name="Menu" Content="Меню" />
+            <Interferometr:Textbar Grid.Row="1"/>
+            <Interferometr:Draggable Grid.Row="2" Margin="0,0,0,0"/>
 
         </Grid>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
                 <RowDefinition Height="580" />
                 <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
+
+            <Image Grid.Row="1" Source="Pictures/Scheme.png" Margin="0,0,0,0"/>
+            <Interferometr:Controls Grid.Row="2" Margin="200,0,200,5" />
+
+
         </Grid>
         <Grid Grid.Column="2">
             <Grid.RowDefinitions>
-                <RowDefinition Height="250"/>
-                <RowDefinition Height="580" />
-                <RowDefinition Height="100"/>
+                <RowDefinition Height="225"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="200"/>
+
             </Grid.RowDefinitions>
+
+            <Interferometr:Results Grid.Row="0"/>
+            <Interferometr:Buttons Grid.Row="2"/>
+
         </Grid>
     </Grid>
 
