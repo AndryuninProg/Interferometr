@@ -11,13 +11,13 @@
     <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"/>
-            <ColumnDefinition Width="780"/>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="250"/>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="0">
             <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="420"/>
                 <RowDefinition Height="260"/>
             </Grid.RowDefinitions>
 
@@ -28,8 +28,8 @@
         </Grid>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="580" />
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*" />
                 <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
 
@@ -40,14 +40,15 @@
         </Grid>
         <Grid Grid.Column="2">
             <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
                 <RowDefinition Height="225"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="200"/>
 
             </Grid.RowDefinitions>
 
-            <Interferometr:Results Grid.Row="0"/>
-            <Interferometr:Buttons Grid.Row="2"/>
+            <Interferometr:Results Grid.Row="1"/>
+            <Interferometr:Buttons Grid.Row="3"/>
 
         </Grid>
     </Grid>
