@@ -64,6 +64,10 @@
     <Compile Include="Draggable.xaml.cs">
       <DependentUpon>Draggable.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DropZone.xaml.cs">
+      <DependentUpon>DropZone.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ItemObj.cs" />
     <Compile Include="Results.xaml.cs">
       <DependentUpon>Results.xaml</DependentUpon>
     </Compile>
@@ -77,6 +81,10 @@
     <Page Include="Controls.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DropZone.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -133,7 +141,9 @@
     <Resource Include="Pictures\arrow.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Pictures\Scheme.png" />
+    <None Include="Pictures\Scheme.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\Filter.png" />
@@ -149,6 +159,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\Laser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Arrow2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

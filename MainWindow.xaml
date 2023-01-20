@@ -4,8 +4,10 @@
         xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Interferometr="clr-namespace:Interferometr" mc:Ignorable="av" x:Class="WpfTutorialSamples.XAML.EventsSample"
         Title="Interferometr" Height="720" Width="1280"
         ResizeMode="CanResize"
-        SizeToContent="WidthAndHeight"
-        WindowStartupLocation ="CenterScreen">
+        WindowStartupLocation ="CenterScreen"
+        MinHeight="720"
+        MinWidth="1280"
+    >
 
 
     <Grid >
@@ -33,7 +35,7 @@
                 <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
 
-            <Image Grid.Row="1" Source="Pictures/Scheme.png" Margin="0,0,0,0"/>
+            <Interferometr:DropZone Grid.Row="1"/>
             <Interferometr:Controls Grid.Row="2" Margin="200,0,200,5" />
 
 
@@ -53,37 +55,4 @@
         </Grid>
     </Grid>
 
-    <!--<Grid Margin="0,2,0,-2" >
-
-        <Rectangle Height="200" Margin="1072,40,0,0" Stroke="Black" VerticalAlignment="Top" Fill="#ffffcc" HorizontalAlignment="Left" Width="208" />
-
-        <Rectangle HorizontalAlignment="Left" Height="187" Margin="1072,515,0,0" Stroke="Black" VerticalAlignment="Top" Width="208" Fill="#ffffcc" />
-        <Button Content="Старт" HorizontalAlignment="Left" Margin="1092,533,0,0" VerticalAlignment="Top" Height="60" Width="84" FontSize="16" Cursor="Hand"/>
-        <Button Content="Стоп" HorizontalAlignment="Left" Margin="1186,534,0,0" VerticalAlignment="Top" Height="58" Width="84" FontSize="16"/>
-        <Button Content="100&#xA;Быстро" HorizontalAlignment="Left" Margin="1092,628,0,0" VerticalAlignment="Top" Height="59" Width="84" FontSize="16"/>
-        <Button Content="Очистить&#xA; схему" HorizontalAlignment="Left" Margin="1186,628,0,0" VerticalAlignment="Top" Height="59" Width="84" FontSize="16"/>
-        <Image Source="C:\Users\andru\Desktop\WpfApp1\WpfApp1\WPF guide\WpfApp1\Pictures\Scheme.png" Margin="394,59,306,125" Width="580" Height="520"/>
-        <TextBlock HorizontalAlignment="Left" Margin="1130,39,0,0" TextWrapping="Wrap" Text="Результаты" VerticalAlignment="Top" TextAlignment="Center" FontSize="18"/>
-        <TextBlock HorizontalAlignment="Left" Margin="1082,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"><Run Language="ru-ru" Text="Всего:"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="1082,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"><Run Language="ru-ru" Text="Детектор 1:"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="1082,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"><Run Language="ru-ru" Text="Детектор 2:"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="1082,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"><Run Language="ru-ru" Text="Поглощено:"/></TextBlock>
-
-
-        <Interferometr:Draggable HorizontalAlignment="Left" Margin="0,450,0,0" VerticalAlignment="Top" Height="252"/>
-
-        <Interferometr:Textbar HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top" Height="410" Width="250"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="410" Margin="0,40,0,0" VerticalAlignment="Top" Width="250"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="252" Margin="0,450,0,0" VerticalAlignment="Top" Width="250"/>
-        <TextBlock HorizontalAlignment="Left" Margin="1191,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" TextAlignment="Center" Width="74"><Run Language="ru-ru" Text="0"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="1191,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Height="19" Width="74" TextAlignment="Center"><Run Language="ru-ru" Text="0"/><LineBreak/><Run Language="ru-ru"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="1191,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" Width="74" TextAlignment="Center"><Run Language="ru-ru" Text="0"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="1191,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" TextAlignment="Center" Width="74"><Run Language="ru-ru" Text="0"/></TextBlock>
-        <Interferometr:Controls HorizontalAlignment="Center" Margin="0,611,0,0" VerticalAlignment="Top" Width="370"/>
-
-
-        <Image Source="C:\Users\andru\Desktop\WpfApp1\WpfApp1\WPF guide\WpfApp1\Pictures\Laser.png" Margin="267,509,891,128"/>
-        <TextBlock HorizontalAlignment="Left" Margin="861,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"><Run Language="ru-ru" Text="Детектор 1"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="754,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"><Run Text="Детектор "/><Run Language="ru-ru" Text="2"/></TextBlock>
-    </Grid>-->
 </Window>

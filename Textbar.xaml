@@ -9,9 +9,33 @@
              Background="#ffffcc"
              >
     <Grid>
-        <TextBlock x:Name="Task" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Текст задания" VerticalAlignment="Center" Height="380" Width="230" FontFamily="Segoe UI" FontSize="16" Background="#339DFF7B"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Задание" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+        <TextBlock Grid.Row="1" Margin="5" Text="Текст задания"/>
+        <Image Source="Pictures/Arrow2.png" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Height="30" Width="35" Margin="0,0,10,10" />
+        <Image Source="/Pictures/arrow2.png" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Height="30" Width="35" Margin="0,0,58,10" RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+
+        <!--<TextBlock x:Name="Task" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Текст задания" VerticalAlignment="Center" Height="380" Width="230" FontFamily="Segoe UI" FontSize="16" Background="#339DFF7B"/>
         <Button x:Name="NextButton" Content="След." HorizontalAlignment="Left" Margin="192,359,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="PrevButton" Content="Пред." HorizontalAlignment="Left" Margin="141,359,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="PrevButton" Content="Пред." HorizontalAlignment="Left" Margin="141,359,0,0" VerticalAlignment="Top"/>-->
 
     </Grid>
 </UserControl>

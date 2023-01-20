@@ -9,39 +9,27 @@
              Background="#ffffcc">
 
     <Grid>
-        <!-- Устанавливаем две строки -->
         <Grid.RowDefinitions>
-            <RowDefinition Height="37*"></RowDefinition>
-            <RowDefinition Height="86*"></RowDefinition>
-            <RowDefinition Height="67*"></RowDefinition>
-            <RowDefinition Height="43*"></RowDefinition>
-            <RowDefinition Height="27*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
         </Grid.RowDefinitions>
-        <!-- Устанавливаем три столбца -->
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Grid.Column="0" Text="Элементы" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" Height="15" Width="73" FontSize="14"/>
-        <Image Grid.Row="1" Grid.Column="0" Source="Pictures/PS1.png" HorizontalAlignment="Left" Margin="15,5,0,5" Width="40"/>
-        <Image Grid.Row="1" Grid.Column="0" Source="Pictures/Polarizer.png" HorizontalAlignment="Left" Margin="75,5,0,5" Width="35"/>
-        <Image Grid.Row="1" Grid.Column="1" Source="Pictures/Filter.png" HorizontalAlignment="Left" Margin="15,10,0,10" Width="47"/>
-        <Image Grid.Row="1" Grid.Column="1" Source="Pictures/bomb.png" HorizontalAlignment="Left" Margin="68,11,0,10" Width="42"/>
+        <TextBlock Grid.Column="0" Text="Элементы" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" Height="24" Width="73" FontSize="16"/>
+        <Image Grid.Row="1" Grid.Column="0" Grid.RowSpan="1" Source="Pictures/PS1.png" HorizontalAlignment="Left" Margin="15,5,0,5" Width="55"/>
+        <Image Grid.Row="1" Grid.Column="0" Grid.RowSpan="1" Source="Pictures/Polarizer.png" HorizontalAlignment="Left" Margin="70,5,0,5" Width="55"/>
+        <Image Grid.Row="1" Grid.Column="1" Grid.RowSpan="1" Source="Pictures/Filter.png" HorizontalAlignment="Right" Margin="15,5,70,5" Width="55"/>
+        <Image Grid.Row="1" Grid.Column="1" Grid.RowSpan="1" Source="Pictures/bomb.png" HorizontalAlignment="Right" Margin="0,5,15,5" Width="55"/>
         <TextBlock Grid.Row="4" Grid.Column="0" Text="Длинна волны" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Left" Height="16" Margin="82,0,0,0" Width="86" FontSize="13"/>
         <Slider Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Grid.ColumnSpan="2" Height="22" Margin="15,10,15,0"/>
-        <TextBlock Grid.Row="2" Grid.Column="0" Text="Источник" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="5,0,0,5" Height="15" Width="66" FontSize="14"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Источник" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="5,0,0,10" Height="20" Width="73" FontSize="16"/>
 
     </Grid>
-    <!--<Grid>
-        <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" FontSize="14"><Run Language="ru-ru" Text="Элементы"/></TextBlock>
-        <Slider HorizontalAlignment="Center" Margin="0,218,0,0" VerticalAlignment="Top" Width="230"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Text="Длина волны"/></TextBlock>
-        <TextBlock HorizontalAlignment="Center" Margin="0,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="λ"/><Run Language="ru-ru" Text="="/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="10,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"><Run Language="ru-ru" Text="Источник"/></TextBlock>
-        <Image x:Name="Filter" Source="C:\Users\andru\Desktop\WpfApp1\WpfApp1\WPF guide\WpfApp1\Pictures\Filter.png" Width="40" Height="60" Margin="125,56,85,144"/>
-        <Image x:Name="Bomb" Source="C:\Users\andru\Desktop\WpfApp1\WpfApp1\WPF guide\WpfApp1\Pictures\Bomb.png" Margin="177,55,18,147"/>
-        <Image x:Name="Shifter" Source="C:\Users\andru\Desktop\WpfApp1\WpfApp1\WPF guide\WpfApp1\Pictures\PS.png" Margin="81,38,130,144"/>
-        <Image x:Name="Polarizer" Source="C:\Users\andru\Desktop\WpfApp1\WpfApp1\WPF guide\WpfApp1\Pictures\Polarizer.png" Margin="16,49,195,138"/>
-    </Grid>-->
+
 </UserControl>

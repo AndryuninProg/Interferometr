@@ -6,13 +6,25 @@
              xmlns:local="clr-namespace:Interferometr"
              mc:Ignorable="d" 
              d:DesignHeight="100" d:DesignWidth="400"
+             MaxWidth="400"
              >
     <Grid>
-        <Rectangle Fill="#ffffcc" RadiusX="27" RadiusY="27" StrokeThickness="3"/>
-        <Slider HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top" Width="316" Height="32"/>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Center" FontSize="16"><Run Language="ru-ru" Text="Поляризация"/></TextBlock>
-        <Border BorderBrush="Black" BorderThickness="2,2,2,2" CornerRadius="25,25,25,25"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,69,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <Rectangle Grid.RowSpan="3" Fill="#ffffcc" RadiusX="27" RadiusY="27" StrokeThickness="3"/>
+        <Border Grid.RowSpan="3" BorderBrush="Black" BorderThickness="2,2,2,2" CornerRadius="25,25,25,25"/>
+
+        <Slider Grid.Row="1" VerticalAlignment="Center" Margin="20,0,20,0" />
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"  Text="Поляризация"/>
+        <TextBlock Grid.Row="2" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center"/>
 
 
     </Grid>
